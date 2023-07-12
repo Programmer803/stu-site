@@ -1,0 +1,5 @@
+flask
+requests
+aiohttp
+selenium
+bs4

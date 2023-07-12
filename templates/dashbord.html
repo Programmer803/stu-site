@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width , initial-scale=1">
+        <style>
+            .ul_page li {
+                list-style-type:none;
+                float: right;
+                
+                display:inline-block;
+                margin-left:5%;
+                color: brown;
+                
+
+
+            }
+            .ul_page{
+                margin-right:5%;
+               
+           
+            
+            }
+            body{
+                background-color:#edf0f5;
+            }
+
+            .ul_page li a {
+                text-decoration: none;
+                color: brown;
+                
+            }
+            #search{
+                float:left;
+                border-radius:20px;
+                width:20%;
+            }
+            .quest{
+                background-color:#31a331;
+                width:23%;
+                height:73%;
+                border-radius:5%;
+
+            }
+            .quest #quest{
+                
+                display: flex;
+                justify-content: center;
+                
+            }
+            .quest li{
+                margin-left:5px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <img src="https://cdn-icons-png.flaticon.com/512/1651/1651586.png" style="width:70px;height: auto;min-width:69;"><h2 style="float: right;color: cornflowerblue;" >{{name}}</h2>
+        <hr style="height:3px;" color="black">
+        <ul class="ul_page" style="margin-top: 1%;">
+            <h3>
+                <li>
+                    <a href="/my-dashbord/make-question">طرح سوال</a>
+                </li>
+                <li>
+                    <a href="/my-dashbord/make-article">ساخت مقاله</a>
+                </li>
+                <li>
+                    <a href="/my-dashbord/all-article">مقاله های من</a>
+                </li>
+                <li>
+                    <a href="/my-dashbord/exams">ازمون ها</a>
+                </li>
+            </h3>
+    
+        </ul>
+    
+       
+          
+       
+        <hr style="height:0.8px;" >
+        <form action="/my-dashbord/search" method="post">
+            <input name="data" type="search" id="search" required placeholder="دنبال په میگردی">
+            <input type="submit" style="border-radius:40px;" value="search">
+        </form>
+        <div class="quest">
+            <h2 id="quest">سوالات مطرح شده</h2>
+            <li>
+                {{quest}}
+
+            </li>
+        </div>
+        
+       
+        
+
+
+    </body>
+</html>

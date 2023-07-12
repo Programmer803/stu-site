@@ -1,0 +1,91 @@
+<html>
+<head>
+    <title>ساخت مقاله</title>
+<meta name="viewport" content="width=device-width, initial-scale=0.8">
+<style>
+body{
+    background-color:#2E8B57;
+    
+
+
+    
+}
+@media only screen and (min-width:280px) and ( max-width: 400px) {
+div.middle{
+
+width: 80%;
+margin-top:4%;
+height:400px;
+margin-left:20%;
+background-color: crimson;
+
+}
+
+}
+div.middle{
+
+    width: 60%;
+    margin-top:4%;
+    height:400px;
+    margin-left:20%;
+    background-color: crimson;
+
+}
+
+textarea{
+ resize:none;
+ direction: rtl;
+}
+h1{
+    display: flex;
+    margin-top:2%;
+    
+    
+   
+    
+    
+    justify-content: center;
+}
+</style>
+</head>
+<body>
+<label for="number">
+</label>
+<h1 >ساخت مقاله</h1>
+<form action="/data-article" method="POST">
+
+<div class="middle">
+<input class="num" type="text" name="title" style="direction:initial;margin-top:1%;margin-left:5%;width:40%;height:30px;" required placeholder="موضوع">
+
+<textarea class="pass-2" name="comment" rows="8" maxlength="65525" style="margin-top:1%;margin-left:5%;width:80%;height:300px;" required></textarea>
+
+<select name="group" style="float: right;width:10%;margin-right:3%;" >
+<option>ریاضیات</option>
+<option>علوم</option>
+<option>قران و معارف اسلامی</option>
+<option>علوم کامپیوتر</option>
+
+<option>کاروفناوری</option>
+<option>خبری</option>
+<option>تکنولوژی</option>
+<option>ادبیات فارسی</option>
+<option>زبان انگلیسی</option>
+<option>روانشناسی</option>
+<option>علوم تجربی</option>
+<option>سایر موارد</option>
+
+
+
+</select>
+
+
+<label>
+<input name="sub" type="submit" value="ایجاد مقاله" style="margin-top:1%;margin-left:8%;width:170px;height:30px;" placeholder="متن">
+</label>
+</div>
+</form>
+</div>
+</div>
+</div>
+</body>
+</head>
